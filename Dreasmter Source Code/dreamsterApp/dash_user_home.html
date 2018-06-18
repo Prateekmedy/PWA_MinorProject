@@ -1,0 +1,52 @@
+<div class="mainBackground" >
+ 
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span id="title" class="mdl-layout-title">Dreamster</span>
+
+    <div class="mdl-layout-spacer"></div>
+   
+    <span ng-click="logout()" id="title" class="mdl-layout-title" style="cursor:pointer;"><i class="material-icons">exit_to_app</i></span>
+  </div>
+</header>
+
+
+
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+    <div  class="mdl-layout__header" style="position: absolute;bottom: 0;min-height: 10px;">
+   <!-- Tabs -->
+      <div class="nav_tabs mdl-layout__tab-bar mdl-js-ripple-effect ">
+        <a  href="" id="home" ng-click="home()" class=" pointer mdl-layout__tab is-active faltu" ><i class="material-icons">home</i></a>
+        <a  href="" id="post" ng-click="post()" class="pointer mdl-layout__tab "><i class="material-icons">perm_media</i></a>
+        <a  href="" id="course" ng-click="course()" class="pointer mdl-layout__tab"><i class="material-icons">class</i></a>
+        <a  href="" id="profile" ng-click="profile()" class="pointer mdl-layout__tab" ><i class="material-icons">account_circle</i></a>
+      </div>
+    </div>
+
+    
+      <main class="mdl-layout__content">
+  <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1" style="margin-top: 64px;height: 2000px;">
+    <div class="page-content" ng-include="path.home">Home</div>
+  </section>
+  <section class="mdl-layout__tab-panel" id="scroll-tab-2" style="margin-top: 64px;height: 1000px;">
+    <div class="page-content" ng-include="path.post">post</div>
+  </section>
+  <section class="mdl-layout__tab-panel" id="scroll-tab-2_1" style="margin-top: 64px;">
+    <div class="page-content" ng-include="path.postpage">postpage</div>
+  </section>
+  <section class="mdl-layout__tab-panel" id="scroll-tab-3" style="margin-top: 64px;">
+    <div class="page-content" ng-include="path.course">course</div>
+  </section>
+  <section class="mdl-layout__tab-panel" id="scroll-tab-4" style="margin-top: 64px;">
+    <div class="page-content" ng-include="path.profile">profile</div>
+  </section>
+</main>
+    
+  </div>
+
+
+</div>
+</div>

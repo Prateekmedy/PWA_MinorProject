@@ -1,0 +1,80 @@
+<div ng-controller="PPC">
+    <div class="mainBackground" style="margin-bottom:50px;">
+   
+     
+      
+    <div ng-repeat="story in stories | filter: { pagename: name }">
+      <div  id="post_row" class="mdl-grid">
+        <div  id="story_col" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone"> 
+          <div id="story_card" class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div id="card_header" class="mdl-card__supporting-text">
+                <div id="card_profilePic" ng-click="gotoProfile()" style="background-image: url({{story.postUserImg}})"></div>
+                <div id="card_username"><h4>{{story.postUserUsername}}</h4></div>
+                <div id="card_pagename"><h6>{{story.pagename}}</h6></div>
+              </div>
+            <div id="img_area" style="background-image: url({{story.postImg}});">
+              
+            </div>
+            
+            <div id="card_footer">
+              <div id="hit_btn_div">
+              <button id="hits_btn"  ng-click="hitLike(story.postid)" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+                <i class="material-icons" style="position:relative;top:-8px;color:#fff;">whatshot</i>
+              </button>
+            </div>
+             <div id="hit_count_div">
+              <div id="hits_count_div" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" >
+                <h5 class="mdl-card__title-text hits_count" style="position:relative;top:0px;">{{story.postHits}}</h5>
+                <div id="hit_logo2"></div>
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div id="newpost_div">
+      <button ng-click="post()" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+        <i class="material-icons" style="position:relative;left:12px;top:5px;">add</i>
+      </button>
+    </div>
+     
+    
+    
+    <div id="post_dialog" class="mdl-card mdl-shadow--2dp">
+      <div  class="mdl-grid full_widht" >
+               <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                        <form>
+                            <label for="inputFile" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                               Upload
+                            </label>
+                            <input id ="inputFile" type="file"  ng-model="imageSrc" accept="image/jpg"> 
+                        </form>
+               </div>
+      </div>
+      <div  class="mdl-grid full_widht" >
+               <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone" >
+               
+                <img src="img/gray.jpg" id="pic_viewer" />
+                </div>
+      </div>
+      <div  class="mdl-grid full_widht" >
+        <div  id="" class="mdl-cell mdl-cell--9-col-desktop mdl-cell--7-col-tablet mdl-cell--10-col-phone" style="display: flex;justify-content: flex-end;">
+         <button ng-click="postImageToServer()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                   Post
+                 </button>
+           </div>     
+        <div  id="" class="mdl-cell  mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--2-col-phone">
+          <button ng-click="cancel()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                   Cancel
+                 </button>
+        </div>
+        </div>
+    </div>
+     
+     
+    </div>
+    
+       
+    
+    </div>

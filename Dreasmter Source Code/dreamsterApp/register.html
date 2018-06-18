@@ -1,0 +1,182 @@
+
+<div class="mainBackground" >
+    <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span id="title" class="mdl-layout-title">Dreamster</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      
+      <span ng-click="logout()" id="title" class="mdl-layout-title" style="cursor:pointer;"><i class="material-icons">home</i></span>
+    </div>
+  </header>
+  
+  <main class="regContent mdl-layout__content" ng-controller="UserRegistration1Controller">
+    <div class="page-content">
+    <div id="section1">
+    <div class="mdl-grid">
+        <div   class=" mdl-cell mdl-cell--12-col  mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+             <div class="regCard demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-grid" >
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-right">
+                      <div class="mdl-card__title">
+                        <h2 class="regText mdl-card__title-text" style="color:#fff;margin-bottom: -20px;">Registration</h2>
+                      </div>
+                  </div>
+                </div>
+                <div class="mdl-grid" >
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center" >
+                    <div class="formText mdl-textfield mdl-js-textfield mdl-textfield--floating-label" >
+                        <input class="mdl-textfield__input" type="text" id="sample3" ng-model="name" pattern="-?([A-Z]*([A-Z]|[a-z]| ))+?">
+                        <label class="mdl-textfield__label" for="sample3">Your Name</label>
+                    </div>
+                  </div>   
+                </div>
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+                    <div class="formText mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" name ="username" id="sample3" ng-model="username" >
+                        <label class="mdl-textfield__label" for="sample3">Your Username</label>
+                    </div>
+                  </div>   
+                </div>
+                <div class="mdl-grid">
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+                    <div class="formText mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="sample3" ng-model="password" pattern="-?.{8,13}?">
+                        <label class="mdl-textfield__label" for="sample3">Choose Password</label>
+                    </div>
+                  </div>   
+                </div>
+                <div class="mdl-grid">
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+                    <div class="formText mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="sample3" ng-model="Cpassword"  pattern="-?.{8,13}?">
+                        <label class="mdl-textfield__label" for="sample3">Confirm Password</label>
+                    </div>
+                  </div>   
+                </div>
+                <div class="mdl-grid">
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+                    <div class="formText mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" name ="email" type="email" id="sample3" ng-model="email" >
+                        <label class="mdl-textfield__label" for="sample3">Your Email</label>
+                    </div>
+                  </div>   
+                </div>
+                <div class="mdl-grid">
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+                    <div class="formText mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="sample3" pattern="-?[0-9]*(\.[0-9]+)?.{10,10}" ng-model="mobile" >
+                        <label class="mdl-textfield__label" for="sample3">Your Mobile Number</label>
+                        
+                    </div>
+                  </div>   
+                </div>
+                <div class="mdl-grid">
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+                    <label class="regRadio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                      <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" ng-model="userOption" unchecked>
+                      <span class="mdl-radio__label">User</span>
+                    </label>
+                    <label class="regRadio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                      <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2" ng-model="cstOption" unchecked>
+                      <span class="mdl-radio__label">Customer</span>
+                    </label>
+                  </div>   
+                </div>
+                <div class="mdl-grid">
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="next()">
+                      NEXT
+                    </button>
+                  </div>   
+                </div>
+            </div>
+        </div>
+    </div>          
+    </div>
+    <div id="section2" ng-controller="UserRegistration2Controller">
+        <div class="mdl-grid">
+        <div   class=" mdl-cell mdl-cell--12-col  mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+             <div class="regCard demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-grid" >
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-right">
+                      <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text" style="color:#fff;margin-bottom: -20px;">Registration</h2>
+                      </div>
+                  </div>
+                </div>
+                <div class="mdl-grid" >
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center" >
+                    <div class="formText mdl-textfield mdl-js-textfield mdl-textfield--floating-label" >
+                        <input class="mdl-textfield__input" type="text" id="sample3" ng-model="qualification" pattern="-?([A-Z]*([A-Z]|[a-z]| ))+?">
+                        <label class="mdl-textfield__label" for="sample3">Qualification</label>
+                    </div>
+                  </div>   
+                </div>
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4" ng-model="age" >
+                        <label class="mdl-textfield__label" for="sample4" >Age</label>
+                        <span class="mdl-textfield__error">Input is not a number!</span>
+                    </div>
+                  </div>   
+                </div>
+                <div class="mdl-grid">
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+                    <a href="#!register2"><button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="userSubmit()">
+                      SUBMIT
+                    </button></a>
+                  </div>   
+                </div>
+            </div>
+        </div>
+    </div>          
+    </div>
+    <div id="section3" ng-controller="CustomerRegistration2Controller">
+        <div class="mdl-grid">
+        <div   class=" mdl-cell mdl-cell--12-col  mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+             <div class="regCard demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-grid" >
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-right">
+                      <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text" style="color:#fff;margin-bottom: -20px;">Registration</h2>
+                      </div>
+                  </div>
+                </div>
+                <div class="mdl-grid" >
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center" >
+                    <div class="formText mdl-textfield mdl-js-textfield mdl-textfield--floating-label" >
+                        <input class="mdl-textfield__input" type="text" id="sample3" ng-model="brand" pattern="-?([A-Z]*([A-Z]|[a-z]| ))+?">
+                        <label class="mdl-textfield__label" for="sample3">Company/Brand Name</label>
+                    </div>
+                  </div>   
+                </div>
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+                    <div class="formText mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="sample3" ng-model="designation" pattern="-?([A-Z]*([A-Z]|[a-z]| ))+?">
+                        <label class="mdl-textfield__label" for="sample3">Designation (if any)</label>
+                    </div>
+                  </div>   
+                </div>
+                <div class="mdl-grid">
+                  <div class=" mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+                    <a href="#!register2"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="cstSubmit()">
+                      SUBMIT
+                    </button></a>
+                  </div>   
+                </div>
+            </div>
+        </div>
+    </div>          
+    </div>
+    </div>
+  </main>
+</div>
+</div>

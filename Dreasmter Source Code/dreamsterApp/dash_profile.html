@@ -1,0 +1,243 @@
+<div ng-controller="DProC">
+    <div class="mainBackground" >
+
+    
+    
+      <div  id="show_div" class="mdl-grid">
+        <div  id="profile_col" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+          <div id="profile_picture" class="mdl-shadow--2dp" style="background-image: url({{profilePic}});"></div>
+          <div id="profile_card" class="mdl-card mdl-shadow--2dp">
+            <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone">
+                        <div id="profile_username"><h4>{{username}}</h4></div>
+                    </div>
+                    <div  id="" class="mdl-cell   mdl-cell--2-offset-desktop mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone">
+                        <button ng-click="update()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                          Update
+                        </button>
+                        <button ng-click="delete()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                          Delete Account
+                        </button>
+                    </div>
+            </div>
+    
+            <div  class="mdl-grid full_widht" >
+               <div  id="" class="mdl-cell   mdl-cell--2-offset-desktop mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--6-col-phone">
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Username</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Name</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Password </div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Email</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Mobile No.</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Interest</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">{{option1_label}}</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">{{option2_label}}</div>
+                    </div>
+                  </div>
+               </div>
+    
+    
+               <div  id="" class="mdl-cell   mdl-cell--1-offset-desktop mdl-cell--5-col-desktop mdl-cell--6-col-tablet mdl-cell--6-col-phone">
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="">{{username}}</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="">{{name}}</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="">{{password}} </div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="">{{email}}</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="">{{mobile}}</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="">{{interest}}</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="">{{option1}}</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="">{{option2}}</div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    <!-- Update card is here -->
+    <div  id="update_div" class="mdl-grid">
+        <div  id="profile_col" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+          <div id="profile_picture" class="mdl-shadow--2dp" style="background-image: url({{profilePic}});"></div>
+          <div id="profile_card" class="mdl-card mdl-shadow--2dp">
+            <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone">
+                        <div id="profile_username"><h4>{{username}}</h4></div>
+                    </div>
+                    <div  id="" class="mdl-cell   mdl-cell--4-offset-desktop mdl-cell--2-col-desktop mdl-cell--6-col-tablet mdl-cell--12-col-phone">
+                        <button ng-click="done()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                          Done
+                    </div>
+            </div>
+    
+            <div  class="mdl-grid full_widht" >
+               <div  id="" class="mdl-cell   mdl-cell--2-offset-desktop mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--6-col-phone">
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Username</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Name</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Password </div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Email</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Mobile No.</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">Interest</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">{{option1_label}}</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="profile_username_div">{{option2_label}}</div>
+                    </div>
+                  </div>
+               </div>
+    
+    
+               <div  id="" class="mdl-cell   mdl-cell--1-offset-desktop mdl-cell--5-col-desktop mdl-cell--6-col-tablet mdl-cell--6-col-phone">
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="">{{username}}</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="">{{name}}</div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div class="mdl-textfield mdl-js-textfield update_textfield">
+                        <input class="mdl-textfield__input" type="text" id="sample3" ng-model="U_password">
+                        <label class="mdl-textfield__label" for="sample3">{{password}}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div class="mdl-textfield mdl-js-textfield update_textfield">
+                        <input class="mdl-textfield__input" type="text" id="sample4" ng-model="U_email">
+                        <label class="mdl-textfield__label" for="sample4">{{email}}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div class="mdl-textfield mdl-js-textfield update_textfield">
+                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" ng-model="U_mobile" id="sample8">
+                        <label class="mdl-textfield__label" for="sample8">{{mobile}}</label>
+                        <span class="mdl-textfield__error">Input is not a number!</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div id="">{{interest}}</div>
+                    </div>
+                    </div>
+                     <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div class="mdl-textfield mdl-js-textfield update_textfield">
+                        <input class="mdl-textfield__input" type="text" id="sample6" ng-model="U_option1">
+                        <label class="mdl-textfield__label" for="sample6">{{option1}}</label>
+                      </div>
+                    </div>
+                    </div>
+                  <div  class="mdl-grid full_widht">
+                    <div  id="" class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                      <div class="mdl-textfield mdl-js-textfield update_textfield">
+                        <input class="mdl-textfield__input" type="text" id="sample7" ng-model="U_option2">
+                        <label class="mdl-textfield__label" for="sample7">{{option2}}</label>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                 
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+
+</div>

@@ -1,0 +1,646 @@
+body,html{
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+ 
+}
+  .mainBackground{
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient( to left top,#FC5C7D , #6A82FB);
+      background: -moz-linear-gradient( to left top, #FC5C7D, #6A82FB);
+      background: -ms-linear-gradient( to left top, #FC5C7D, #6A82FB);
+      background: -o-linear-gradient( to left top, #FC5C7D, #6A82FB);
+      background: linear-gradient( to left top, #FC5C7D, #6A82FB);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+  }
+  #view_div{
+    height: 100%;
+  }
+  .header{
+    color: #fff;
+    font-family:  Roboto ;
+  }
+  
+  #dreamster_header{
+    font-size: 90px;
+    letter-spacing: 1.3px;
+    position: relative;
+    top: 130px;
+  }
+  #dreamster_title{
+    position: relative;
+    top: 90px;
+    left: 200px;
+  }
+  .mainBtn{
+    position: relative;
+    top: 105px;
+    
+  }
+  #loginBtn,#loginBtn:focus{
+    border-radius: 50px;
+    border: 0px;
+  }
+  #regBtn{
+    border-radius: 50px;
+  }
+  a{
+      text-decoration: none;
+  }
+  
+#login_form{
+	position: relative;
+	top: 105px;
+
+}
+
+.regContent{
+  display: flex;
+  justify-content: center;   
+ margin: 20px;
+}
+
+.regText {
+  width: 500px;
+-webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+font-size: 34px;
+font-family: Roboto 500i;
+}
+
+.regCard{
+  width: 550px;
+  height: 500px;
+  background: rgba(255,255,255,0.3);
+}
+
+.formText{
+  margin-top:  -45px;
+  margin-bottom: -45px;
+}
+
+.regRadio{
+  margin-right: 50px;
+  margin-left: 50px;
+  font-family: Roboto;
+  color:#fff;
+  font-size:20px;
+}
+
+#section1{
+  display: block;
+}
+#section2{
+  display: none;
+}
+#section3{
+  display: none;
+}
+
+
+.regContent{
+  display: flex;
+  justify-content: center;   
+ margin: 20px;
+}
+
+.regText {
+  width: 500px;
+-webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+font-size: 34px;
+font-family: Roboto 500i;
+}
+
+.regCard{
+  width: 550px;
+  height: 500px;
+  background: rgba(255,255,255,0.3);
+}
+
+.formText{
+  margin-top:  -45px;
+  margin-bottom: -45px;
+}
+
+.regRadio{
+  margin-right: 50px;
+  margin-left: 50px;
+  font-family: Roboto;
+  color:#fff;
+  font-size:20px;
+}
+
+#section1{
+  display: block;
+}
+#section2{
+  display: none;
+}
+#section3{
+  display: none;
+}
+
+
+.card{
+  margin-bottom: 10px;
+  width: 290px;
+  height: 260px;
+}
+.cardback{
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.cardBlock{
+  display: flex;
+   flex-flow: row wrap; 
+   justify-content: space-around;
+
+}
+.cardText{
+  font-size: 18px;
+}
+
+.nextBtn{
+  position: fixed;
+  top:550px;
+  right: 50px;
+}
+
+
+.newcard{
+  width: 350px;
+  height: 320px;
+}
+.cardback:hover{
+  background-size: 130% 130%;
+  transition:  0.5s ease-in-out;
+  cursor: pointer; 
+}
+#cardRow{
+  margin-top: 100px;
+}
+
+
+
+
+
+#title{
+  font-size: 30px;
+}
+#block{
+  display: flex;
+  justify-content: center;
+  
+
+}
+#dash_home_block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invisible_div{
+  background: rgba(0,0,0,0);
+  box-shadow: 0px 0px 0px 0px;
+}
+#name{
+  margin-top: 35px;
+}
+#username_title{
+  margin-bottom: 0px;
+}
+#name_title{
+  margin-top: 0px;
+}
+.faltu{
+  color: #4A148C;
+  background-color: #fff; 
+ 
+}
+.pointer{
+  cursor: pointer;
+}
+#home{
+  color: #4A148C;
+}
+#profile{
+  color: #4A148C;
+}
+#post{
+  color: #4A148C;
+}
+#course{
+  color: #4A148C;
+}
+.count_card{
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-left: 20%;
+  background: rgba(0,0,0,0);
+  box-shadow:0px 0px 0px 0px;
+}
+.post_card{
+  width: 250px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.post_card:hover{
+  background-size: 130% 130%;
+  transition:  0.5s ease-in-out;
+  cursor: pointer;
+}
+.course_card{
+  width: 800px;
+}
+.intro_card{
+  width: 500px;
+}
+
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('img/F.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+} 
+#PP_div{
+  display: flex;
+  margin-top: 20px;
+  align-self: center;
+  height: 150px;
+  width: 150px;
+  border:3px solid #fff;
+  border-radius: 50%;
+  
+}
+.material-icons{
+  margin-top: 15px;
+}
+#post_section{
+  padding-right: 50px;
+  padding-left: 140px;
+}
+#course_section{
+  margin-bottom: 100px;
+}
+.hit_btn{
+  width: 90px;
+  height: 30px;
+  position: relative;
+  top: 130px;
+  left: -10px; 
+}
+#hit_logo{
+  height: 80px;
+  width: 40px;
+  background-image: url("img/hits.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+  top: -43px;
+  left: 28px;
+}
+.hits_count{
+  font-size: 14px;
+  position: relative;
+  top: 6px;
+  left: -10px;
+}
+#post_back{
+  background-image: url("img/posts.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+  background-size: 100% 100%; 
+}
+#post_title{
+  position: relative;
+  top: -70px;
+  left: -10px;
+  color: #fff;
+}
+#post_count{
+  position: relative;
+  top: -100px;
+  left: 65px;
+  font-size: 50px;
+  color: #fff;
+}
+#course_back{
+  background-image: url("img/course.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+  background-size: 100% 100%; 
+}
+#course_title{
+  position: relative;
+  top: -20px;
+  left: 1px;
+  color: #fff;
+}
+#course_count{
+  position: relative;
+  top: -45px;
+  left: 75px;
+  font-size: 50px;
+  color: #fff;
+}
+#badge_back{
+  background-image: url("img/shield badge.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+  background-size: 100% 100%; 
+}
+#score_row{
+  margin-bottom: 200px;
+  margin-top: 50px;
+}
+.post_title{
+  display: flex;
+  justify-content: center;
+}
+.post_title_btn{
+  width: 500px;
+  height: 50px;
+  cursor: unset;
+}
+#post_title_text{
+  font-size: 25px;
+}
+#interest_name_title{
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+  top: 115px;
+}
+
+#interest_row{
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+#intrest_cards{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  background: rgb(0,0,0,0.2);
+}
+.nav_tabs{
+  height: 100px;
+}
+
+@media only screen and (max-width: 840px) {
+   .count_card{
+  
+  margin-left: 8%;
+}
+#post_section{
+  padding-right: 50px;
+  padding-left: 140px;
+}
+.course_card{
+  width: 700px;
+}
+#course_section{
+  padding-left: 10px;
+}
+}
+@media only screen and (max-width: 480px) {
+   .count_card{
+  
+  margin-left: 20%;
+}#post_section{
+  padding-right: 50px;
+  padding-left: 90px;
+}
+.course_card{
+  width: 400px;
+}
+}
+
+
+/* profile page */
+.full_widht{
+  width: 100%;
+  margin-bottom: -10px;
+}
+#profile_col{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  color: #000;
+}
+#profile_card{
+  width: 800px;
+  height: 450px;
+}
+#profile_picture{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: relative;
+  left: 100px;
+  top: -45px;
+  z-index: 5;
+}
+#profile_username{
+  height: 30px;
+  margin-left: 80px;
+  margin-top: -20px;
+  color: #000;
+}
+#show_div{
+  display: block;
+  margin-top: -40px;
+}
+#update_div{
+  display: none;
+  margin-top: -40px;
+}
+.update_textfield{
+  margin-top: -25px;
+  margin-bottom: -25px;
+}
+
+
+/* post page */
+#story_col{
+  display: flex;
+  justify-content: center;
+}
+#story_card{
+  width: 400px;
+  height: 500px;
+  background: rgba(0,0,0,0.2);
+}
+#img_area{
+  height: 400px;
+  background: #EEEEEE;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+#hits_count_div{
+  height: 25px;
+  width: 120px;
+}
+.hits_count{
+  font-size: 20px;
+  cursor: unset;
+}
+#hits_btn{
+  border-radius: 50%;
+  font-size: 24px;
+  height: 40px;
+  margin: auto;
+  min-width: 40px;
+  width: 40px;
+  padding: 0;
+  overflow: hidden;
+  background: #EF5350;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  position: relative;
+  line-height: normal;
+  margin-left: 10px;
+}
+#card_footer{
+  background: rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#hit_logo2{
+  height: 80px;
+  width: 40px;
+  background-image: url("img/hits.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+  top: -53px;
+  left: 58px;
+}
+#hit_count_div{
+  background: blue;
+  display: flex;
+  align-self: center;
+}
+#card_header{
+  background: rgba(0,0,0,0.1);
+  width: 100%;
+  height: 40px;
+  display: flex;
+ 
+}
+#card_profilePic{
+  display: flex;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  margin-top: -8px;
+  cursor: pointer;
+}
+#card_username{
+  display: flex;
+  align-self:  center;
+  margin-left: 10px;
+  color: #fff;
+
+}
+#card_pagename{
+  display: flex;
+  justify-content:  flex-end;
+  align-self: center;
+  margin-left: 80px;
+  color: #BDBDBD;
+}
+#newpost_div{
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  z-index: 5;
+}
+#post_dialog{
+
+  height: 400px;
+  width: 500px;
+  position: fixed;
+  top:100px;
+  left: 400px;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 0;
+}
+#pic_viewer{
+  background-color: #E0E0E0;
+  height: 250px;
+  width: 470px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: none;
+}
+input[type="file"]{
+  display: none;
+}
+#inputFile{
+  background: white;
+}
+
+/*customer Dashboard */
+.addContact_btn{
+  font-size: 15px;
+  padding: 5px;
+  position: relative;
+  top: 130px;
+  left: 30px;
+  height: 30px;
+  padding-top: -10px;
+}
+
+@media only screen and (max-width: 410px) {
+   .count_card{
+  
+  margin-left: 10%;
+}
+#post_section{
+  padding-right: 50px;
+  padding-left: 70px;
+}
+}
+@media only screen and (max-width: 360px) {
+   .count_card{
+  
+  margin-left: 10%;
+}
+#post_section{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+}
+
+
+
+

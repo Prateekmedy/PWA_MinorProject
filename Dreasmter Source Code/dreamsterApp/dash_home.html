@@ -1,0 +1,78 @@
+<div ng-controller="UDHC">
+<div class="mdl-grid">
+  <div class="mdl-cell  mdl-cell--1-offset-desktop mdl-cell--4-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+  	<div id="block">
+	<div class="invisible_div demo-card-wide mdl-card mdl-shadow--2dp intro_card">
+	  <div id="PP_div" style="background-image:url({{profilePic}})"> 
+	  </div>
+	</div>
+	</div>
+  </div>
+  <div class=" mdl-cell  mdl-cell--6-col-desktop mdl-cell--3-offset-tablet mdl-cell--9-col-tablet mdl-cell--1-offset-phone mdl-cell--11-col-phone">
+  	<div id="block">
+	<div class="invisible_div demo-card-wide mdl-card mdl-shadow--2dp intro_card">
+	  <div id="name">
+	    <h2 id="username_title">{{username}}</h2>
+	    <h4 id="name_title">{{name}}</h4>
+	  </div> 
+	</div>
+	</div>
+  </div>
+</div>
+
+<!--credientails card-->
+<div id="score_row" class="mdl-grid" >
+  <div class="mdl-cell   mdl-cell--4-col mdl-cell--2-offset-tablet mdl-cell--11-col-tablet mdl-cell--12-col-phone mdl-typography--text-center ">
+  	<div id = "post_back" class="demo-card-square mdl-card mdl-shadow--2dp count_card">
+	  <div class="mdl-card__title mdl-card--expand">
+	  	<h1 id="post_count" class="mdl-card__title-text">008</h1>
+	    <h2 id="post_title" class="mdl-card__title-text">POSTS</h2>
+	  </div>
+	</div>
+  </div> 
+  <div class="mdl-cell   mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone mdl-typography--text-center">
+  	<div id = "badge_back" class="demo-card-square mdl-card mdl-shadow--2dp count_card">
+	  <div class="mdl-card__title mdl-card--expand">
+	    <div class="mdl-card__title mdl-card--expand">
+	  	
+	  </div>
+	  </div>
+	</div>
+  </div>
+  <div class="mdl-cell   mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-phone ">
+  	<div id = "course_back" class="demo-card-square mdl-card mdl-shadow--2dp count_card">
+	  <div class="mdl-card__title mdl-card--expand ">
+	    <h1 id="course_count" class="mdl-card__title-text">07</h1>
+	    <h2 id="course_title" class="mdl-card__title-text">COURSES</h2>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div  class="mdl-grid">
+	<div  class="mdl-cell   mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone post_title" >
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent post_title_btn"><span id="post_title_text">YOUR POST</span></button>
+	</div>
+</div>
+
+<div id="post_section" class="mdl-grid ">
+	<div ng-repeat="post in posts | filter: { postUserUsername: username }">
+		<div class="mdl-cell   mdl-cell--3-col  mdl-cell--11-col-tablet mdl-cell--12-col-phone ">	
+		  	<div class="demo-card-square mdl-card mdl-shadow--2dp post_card" style="background-image: url({{post.postImg}});">
+			  <div class="mdl-card__title mdl-card--expand">
+			    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent hit_btn" >
+			    	<h4 class="mdl-card__title-text hits_count">{{post.postHits}}</h4>
+			    	<div id="hit_logo"></div>
+			    </button>
+			  </div>
+			</div>
+		</div>
+  	</div> 
+</div>	
+
+</div>
+
+
+
+
+
