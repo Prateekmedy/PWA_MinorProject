@@ -51,22 +51,22 @@ https://dreamsterapp.000webhostapp.com
 #### Some of the ScreenShots:
 
 ##### Dreamster Login Page
-![DigiVote HomePage](https://gateway.ipfs.io/ipfs/QmWTmEhAGYawA9Q39tS4oouGmLdTSXFb8d1MwqbpDnJc3C/)
+![DigiVote HomePage](https://images2.imgbox.com/18/8c/3Y5xRuwS_o.jpg)
 
 ##### Dreamster Home Page
-![DigiVote HomePage](https://gateway.ipfs.io/ipfs/QmRTMXrgNetUgUfwMP9qRTU4YFhwUiCMSLcRHgJgajFwrJ/)
+![DigiVote HomePage](https://images2.imgbox.com/89/ed/Hykmz8z1_o.jpg)
 
 ##### Dreamster Extended Home Page
-![DigiVote HomePage](https://gateway.ipfs.io/ipfs/QmRSsQNGdR6EQf4qoimk3BqxuyngFPQn2Lhb8u3CmnPCCZ/)
+![DigiVote HomePage](https://images2.imgbox.com/a1/c6/8rdf4bk6_o.jpg)
 
 ##### Dreamster Registration Page
-![DigiVote HomePage](https://gateway.ipfs.io/ipfs/QmTkWb7uWfSypNLEzvVKLgaxHyaNaw7LaEB956c48Fsi3t/)
+![DigiVote HomePage](https://images2.imgbox.com/c5/21/0IlZjIsi_o.jpg)
 
 ##### Dreamster Post Page
-![DigiVote HomePage](https://gateway.ipfs.io/ipfs/QmcaHhPFdny5PsxK5WxqWigRAuSWb1LJFYQYCYWsq9ToAF/)
+![DigiVote HomePage](https://images2.imgbox.com/8f/23/WJcX6iip_o.jpg)
 
 ##### Dreamster Profile Page
-![DigiVote HomePage](https://gateway.ipfs.io/ipfs/QmbS2msLZEXAraBBaCP4m5W1BeN1fe26hWfaMFkBK16qWR/)
+![DigiVote HomePage](https://images2.imgbox.com/7b/09/UTdfCEWZ_o.jpg)
 
 ---
 
